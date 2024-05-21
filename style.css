@@ -318,3 +318,108 @@ input{
 .coffee img{
     float: right;
 }
+
+.container-footer{
+    margin-top: 65px;
+    width: 1440px;
+    height: 240px;
+    background-color: #282828;
+}
+
+.logo-footer{
+    padding-top: 40px;
+    float: left;
+}
+
+.topic{
+    color: #D9D9D9;
+}
+
+.footer-description{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 120px;
+    padding: 40px;
+    float: right;
+}
+
+.onebyone{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.onebyone a{
+    text-decoration: none;
+    color: white;
+}
+
+.message{
+    color: #D9D9D9;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.media img{
+    padding-right: 20px;
+}
+
+.parent {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative; 
+}
+
+.child {
+    width: 45%;
+    padding: 20px;
+    background-color: #ddd;
+    border: 1px solid #bbb;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.parent::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* альтернативне рішення */
+
+.parent {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: hidden; 
+}
+
+.parent {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.child {
+    width: 45%;
+    padding: 20px;
+    background-color: #ddd;
+    border: 1px solid #bbb;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 20px;
+    vertical-align: top; 
+}
